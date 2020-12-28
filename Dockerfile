@@ -17,5 +17,5 @@ character-set-server = utf8\n\
 innodb_flush_log_at_trx_commit=2\n\
 sync_binlog=0\n\
 innodb_use_native_aio=0\n\
-basedir = /dev/shm/mariadb\n\
+datadir = /dev/shm/mariadb\n\
 ' >> /etc/mysql/my.cnf
