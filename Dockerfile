@@ -10,7 +10,9 @@ ENV MYSQL_ALLOW_EMPTY_PASSWORD=true \
 # This is the performance optimization tweak to make DB faster
 # basedir is my addition
 RUN echo '\n\
-[mysqld]\n\
+[client-server]\n\
+port = 4306\n\
+[server]\n\
 collation-server = utf8_unicode_ci\n\
 init-connect="SET NAMES utf8"\n\
 character-set-server = utf8\n\
